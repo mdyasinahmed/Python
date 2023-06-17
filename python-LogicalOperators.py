@@ -2,7 +2,6 @@
 print("Logical Operator: Or")
 print(3 < 2 or 2>1)
 
-
 # and operator
 print("Logical Operator: And")
 print(3>2 and 1<2)
