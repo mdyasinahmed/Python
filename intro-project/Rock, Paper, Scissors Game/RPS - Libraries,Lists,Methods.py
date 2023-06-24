@@ -1,32 +1,19 @@
-# Variables
-player_choice = "rock"
-computer_choice = "paper"
-
-# Functions
-def get_choices():
-    player_choice = "rock"
-    computer_choice = "paper"
-
-    return computer_choice
-
-def greetings():
-    return "Hi"
-
-# call a function
-response = greetings()
-print(response)
-
-# choices = get_choices()
-# print(choices)
-
-# others way
-# print(greetings())
-print(get_choices())
+# libraries
+# import random
 
 
-# dictionaries
+# lists
+# food = ["biriyani", "polaw", "kichuri", "kabab", "halim"]
+# print(food)
 
-dict = {"name":"Yasin", "age":20}      # name_of_dict = {key, key, ...}
+import random                                                           #libraries
+def get_choices():                                                      #user defined function
+    player_choice = input("Enter a Choice(rock/paper/scissors): ")      #taking input
+    options = ["rock", "paper", "scissors"]                             #lists
+    computer_choices = random.choice(options)                           #library methods
+    choices = {"Player": player_choice, "Computer": computer_choices}   #dictionaries
 
-take_it = input("Enter a Choice: ")
-print(take_it)
+    return choices                  
+
+choices = get_choices()            #calling function                                    
+print(choices)                     #printing through calling function in variable                               

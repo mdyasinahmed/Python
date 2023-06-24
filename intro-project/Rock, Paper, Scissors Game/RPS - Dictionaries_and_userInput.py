@@ -30,3 +30,6 @@ dict = {"name":"Yasin", "age":20}      # name_of_dict = {key, key, ...}
 
 take_it = input("Enter a Choice: ")
 print(take_it)
+
+dict = {"name":take_it, "age":20}
+print(dict)
