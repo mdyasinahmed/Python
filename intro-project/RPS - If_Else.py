@@ -21,3 +21,8 @@ def get_choices():                                                      #user de
 # Function Arguments
 def check_win(player, computer):
     return [player, computer]
+    
+    if player == computer:
+        return "It's a Tie!"
+    else:
+        return "It isn't Tie."
