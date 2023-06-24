@@ -20,17 +20,18 @@ def get_choices():                                                      #user de
 
 # Function Arguments
 def check_win(player, computer):
-    return [player, computer]
     
     if player == computer:
         return "It's a Tie!"
     else:
         return "It isn't Tie."
-
+        
     #Concatenating Strings and f-String
     print("You Choice" + player, "Computer Choice" + computer)
     #f-String
     print(f"You choice {player}, Computer choice {computer}")
+
+    return [player, computer]
 
 # calling function
 print(get_choices())
