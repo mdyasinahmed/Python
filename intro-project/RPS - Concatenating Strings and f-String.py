@@ -22,8 +22,16 @@ def get_choices():                                                      #user de
 def check_win(player, computer):
     return [player, computer]
     
-    # if and else in Python
     if player == computer:
         return "It's a Tie!"
     else:
         return "It isn't Tie."
+
+    #Concatenating Strings and f-String
+    print("You Choice" + player, "Computer Choice" + computer)
+    #f-String
+    print(f"You choice {player}, Computer choice {computer}")
+
+# calling function
+print(get_choices())
+print(check_win("rock", "computer"))
